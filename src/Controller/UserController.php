@@ -34,6 +34,13 @@ class UserController extends AbstractController
         $this->entityManager = $entityManager;
     }
 
+    /**
+     * @Route("/")
+     */
+    public function index()
+    {
+        return $this->render('user/index.html.twig');
+    }
 
     /**
      * @Route("/patients", name="patients")
