@@ -66,7 +66,7 @@ class UserController extends AbstractController
             }
         }
 
-        return new JsonResponse(['status' => 'error', 'message' => 'You must be logged in before you can access this endpoint.']);
+        return new JsonResponse(['status' => 'error', 'message' => 'You must be logged in as doctor before you can access this endpoint.']);
     }
 
     /**
